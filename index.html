@@ -6,8 +6,47 @@
     <title>Document</title>
     <script src="./script.js"></script>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body onload="render()">
-    <div id="postcontainer"></div>
+    <header>
+      <h2>Für dich</h2>
+      <h2>Gefolgt</h2>
+    </header>
+    <nav>
+      <h1>Instagram</h1>
+      <div class="navelement">
+        <img src="./icons/home.png " /> <a href="">Startseite</a>
+      </div>
+      <div class="navelement">
+        <img src="./icons/search.png" alt="" /><a href="">Suche</a>
+      </div>
+      <div class="navelement">
+        <img src="./icons/compass.png" alt="" /><a href="">Entdecken</a>
+      </div>
+      <div class="navelement">
+        <img src="./icons/video.png" alt="" /><a href="">Reels</a>
+      </div>
+      <div class="navelement">
+        <img src="./icons/send_2099085.png" alt="" /><a href="">Nachrichten</a>
+      </div>
+      <div class="navelement">
+        <img src="./icons/heart.png" alt="" /><a href="">Benachrichtigungen</a>
+      </div>
+      <div class="navelement">
+        <img src="./icons/story.png" alt="" /><a href="">Erstellen</a>
+      </div>
+      <div class="navelement">
+        <img class="profilpic" src="./img/image0.jpg" alt="" /><a href=""
+          >Profil</a
+        >
+      </div>
+    </nav>
+    <div id="postcontainer" class="postcontainer"></div>
   </body>
 </html>

@@ -1,0 +1,331 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 200px;
+  border-right: 1px solid rgba(211, 211, 211, 0.37);
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin-left: 30px;
+}
+
+h1 {
+  margin-bottom: 60px;
+}
+
+.navelement {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+  text-align: center;
+}
+nav img {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.profilpic {
+  border-radius: 30px;
+  height: 30px;
+  width: 30px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.postcontainer,
+header {
+  margin-left: 235px;
+}
+
+header {
+  display: flex;
+  border-bottom: 1px solid rgba(211, 211, 211, 0.37);
+}
+
+header h2 {
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 15px;
+}
+
+p {
+  font-size: 12px;
+}
+img {
+  height: 500px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.p-image {
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  margin-right: 20px;
+}
+
+.post {
+  display: flex;
+
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+
+.postcontainer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: baseline;
+  align-items: baseline;
+  flex-direction: column;
+  width: 400px;
+  margin-left: 300px;
+}
+
+.abovepic {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.authorname {
+  display: flex;
+  flex-direction: column;
+}
+
+.authorname h3,
+.authorname p {
+  margin: 0;
+}
+
+.bottom-border {
+  height: 60px;
+  border-bottom: 1px solid rgba(211, 211, 211, 0.37);
+}
+
+.postbuttons {
+  display: flex;
+}
+
+.postbuttons img {
+  height: 25px;
+  width: 25px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.commentfield {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  flex-direction: row-reverse;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(211, 211, 211, 0.822);
+}
+
+.commentfieldpic {
+  height: 800px;
+  width: 800px;
+}
+
+.postbuttons {
+  height: 25px;
+  width: 25px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.commentfieldright {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: end;
+
+  cursor: pointer;
+  background-color: white;
+  height: 800px;
+  width: 600px;
+}
+
+.closebutton {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 80px;
+}
+
+button {
+  background-color: white;
+  border: none;
+  color: rgb(64, 93, 230);
+  padding: 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-family: r;
+  margin-right: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.input {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  border: 0;
+  outline: 0;
+}
+input:focus {
+  outline: none !important;
+}
+
+.comments {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+@media  (max-width: 1100px) {
+  nav a {
+    display: none ;
+    margin: 0;
+
+  }
+
+  nav {
+    width: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+
+  }
+
+  h1 {
+    display: none;
+  }
+
+  .commentfieldpic {
+    height: 300px;
+    width: 300px;
+    margin-left: 10px;
+  }
+
+  .commentfieldright{
+    height: 300px;
+    width: 300px;
+    font-size: 12px;
+    margin-right: 10px;
+  }
+  h3 
+}
+
+@media  (max-width: 850px) {
+
+  nav {
+    position: fixed;
+    bottom: 0;
+    flex-direction: row;
+    top: auto;
+    width: 100vw;
+    background-color: white;
+    height: 100px;
+    z-index: 999;
+    margin: 0;
+  }
+
+  .post {
+    margin: 0;
+    justify-content: center;
+    
+    display: flex;
+    max-width: 400px;
+    
+  }
+
+  .postcontainer {
+    margin: 0;
+    align-items: center;
+    justify-content: first baseline;
+    margin-top: 30px;
+    display: flex;
+    width: auto;
+  }
+
+  header {
+    margin: 0;
+  }
+
+  img{
+    height: 400px;
+  }
+}
+
+@media  (max-width: 450px) {
+
+  .post {
+    max-width: 300px;
+  }
+
+  img {
+    width: 300px;
+    height: 300px;
+  }
+
+  nav img {
+    height: 20px;
+    width: 20px;
+    margin: 2px;
+  }
+
+  nav {
+    margin: 0;
+    
+  }
+
+  .commentfield {
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .commentfieldright {
+    height: 200px;
+    margin: 0;
+    border-radius: 5px;
+  }
+
+  .commentfieldpic {
+    margin: 0;
+  }
+
+}
